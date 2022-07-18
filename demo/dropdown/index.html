@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <section class="sub-container with-css">
+      <!-- button can capture focus -->
+      <button class="com">
+        <!-- actual button -->
+        <span class="btn">I'm button</span>
+        <div class="dropdown">
+          <ul>
+            <li>I'm item</li>
+            <li>I'm item</li>
+          </ul>
+        </div>
+      </button>
+    </section>
+    <section class="sub-container with-js">
+      <div class="com" id="outer">
+        <button class="btn" id="button">I'm button
+        </button>
+        <div class="dropdown" id="dropdown" data-button-state="false">
+          <ul>
+            <li>I'm item</li>
+            <li>I'm item</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
